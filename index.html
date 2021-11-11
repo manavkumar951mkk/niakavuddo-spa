@@ -1,0 +1,792 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Naika Vaddo Spa</title>
+    <!--
+
+Template 2081 Solution
+
+http://www.tooplate.com/view/2081-solution
+
+-->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+
+    <!-- animate -->
+    <link rel='stylesheet' href='https://d33wubrfki0l68.cloudfront.net/css/b8437710a1e137c45a4286a97a5a341ba4855a3a/css/animate.min.css'/>
+    <!-- bootstrap -->
+    <link rel='stylesheet' href='https://d33wubrfki0l68.cloudfront.net/css/aa947801ade8f7f98771a26a017d826636f92b5f/css/bootstrap.min.css'/>
+    <!-- magnific pop up -->
+    <link rel='stylesheet' href='https://d33wubrfki0l68.cloudfront.net/css/20eee4a760368f4e90402bee75909f213a9d024e/css/magnific-popup.css'/>
+    <!-- font-awesome -->
+    <link rel='stylesheet' href='https://d33wubrfki0l68.cloudfront.net/css/e9de804f2352e01b9e2f8ecee84f49fabcba070c/css/font-awesome.min.css'/>
+    <!-- google font -->
+    <link
+      href="http://fonts.googleapis.com/css?family=Raleway:400,300,700,800"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- custom -->
+    <link rel='stylesheet' href='https://d33wubrfki0l68.cloudfront.net/css/1a85bb24b1b326f3fda67675a9fa570206a8e523/css/style.css'/>
+    <script type='text/javascript' src='https://d33wubrfki0l68.cloudfront.net/js/8bffb2f9d34bfa25d90b02e2a7d4c3fc0a5af3fe/assets/external/jquery-3.5.1.min.dc5e7f18c8.js'></script>
+    <style type="text/css">
+      #map_form {
+        width: 100%;
+        height: 320px;
+        position: relative;
+      }
+      /*#address{
+				width: 100%;
+				height: 400px;
+				position: relative;
+				float: left;
+			}*/
+      #map {
+        width: 100%;
+        height: 325px;
+        position: relative;
+        float: left;
+        background: red;
+      }
+      #map div {
+        width: 100%;
+        height: 100%;
+        position: relative;
+      }
+      #m_font-awesome {
+        font-size: 50px;
+        color: green;
+        margin: 2px 10px;
+        display: none;
+      }
+      .footer_heading {
+        font-size: 30px;
+      }
+      @media (max-width: 640px) {
+        .flexslider {
+          height: 400px;
+        }
+        .flexslider .templatemo_homewrapper {
+          position: absolute;
+          top: 40%;
+          left: 50%;
+          transform: translate(-50%, -60%);
+        }
+        h3.wow,
+        #about .container .row h3.about_us {
+          font-size: 26px;
+        }
+        .img-responsive {
+          width: 100%;
+          padding-bottom: 5px;
+        }
+        .footer_heading {
+          font-size: 24px;
+        }
+        #enquiry_form {
+          width: 90%;
+          position: absolute;
+          margin-top: -390px;
+          margin-left: 20px;
+          background: #93ca3a;
+          z-index: 3;
+        }
+        .form_heading {
+          color: #fff;
+          text-align: left;
+          font-size: 24px;
+          padding: 10px 0px;
+        }
+        .btn {
+          width: auto;
+          border: none;
+          background: whitesmoke;
+          padding: 5px 15px;
+          margin-left: 5px;
+        }
+        #m_font-awesome {
+          font-size: 50px;
+          color: green;
+          margin: 2px 10px;
+          display: block;
+        }
+        #font-awesome {
+          font-size: 50px;
+          color: green;
+          margin: 2px 10px;
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
+    <!-- start navigation -->
+    <div class="navbar navbar-fixed-top navbar-default" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target=".navbar-collapse"
+          >
+            <span class="icon icon-bar"></span>
+            <span class="icon icon-bar"></span>
+            <span class="icon icon-bar"></span>
+          </button>
+          <a href="#" class="navbar-brand"
+            ><img src="https://d33wubrfki0l68.cloudfront.net/b98de2dc3c8d85681a70f38ea108a69c9af9a617/77eb8/images/logo1.png" class="img-responsive" alt="logo"
+          /></a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href='/' class='smoothScroll' style='font-size: 17px'>HOME</a
+              >
+            </li>
+            <li>
+              <a href="#about" class="smoothScroll" style="font-size: 17px"
+                >ABOUT US</a
+              >
+            </li>
+            <li>
+              <a href='/services' class='smoothScroll' style='font-size: 17px'>BODY MASSAGE</a
+              >
+            </li>
+            <li>
+              <a href="#gallery" class="smoothScroll" style="font-size: 17px"
+                >GALLERY</a
+              >
+            </li>
+            <li>
+              <a href='/contact' class='smoothScroll' style='font-size: 17px'>CONTACT</a
+              >
+            </li>
+            <li>
+              <a href="tel:+919834518242"
+                ><i
+                  id="font-awesome"
+                  class="fa fa-phone"
+                  style="font-size: 30px; color: #93ca3a"
+                ></i
+                ><br
+              /></a>
+            </li>
+            <li>
+              <a href="https://wa.me/+919834518242"
+                ><i
+                  id="font-awesome"
+                  class="fa fa-whatsapp"
+                  style="font-size: 30px; color: #93ca3a"
+                ></i
+                ><br
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- end navigation -->
+
+    <script src='https://d33wubrfki0l68.cloudfront.net/js/027c4e8c9325a396b22e4b8f3f5837d2b979f80a/js/responsiveslides.min.js'></script>
+    <script type="text/javascript">
+      $(function () {
+        $("#close").click(function () {
+          $("#enquiry_form").css("display", "none");
+        });
+        $("#bookApt").click(function () {
+          $("#enquiry_form").css("display", "block");
+        });
+      });
+      function clear() {
+        $("#name").val("");
+        $("#phone").val("");
+        $("#email").val("");
+        $("#message").val("");
+      }
+      $("#reset").click(function () {
+        clear();
+      });
+      function sendEnquiryform() {
+        event.preventDefault();
+        var name = $("#name").val();
+        var phone = $("#phone").val();
+        var email = $("#email").val();
+        var message = $("#msg").val();
+        console.log(name + " " + phone + " " + email + " " + message);
+
+        $("#submit").attr("disabled", true);
+
+        var scriptUrl =
+          "https://script.google.com/macros/s/AKfycbwYDyHwvJ7ToW9WGvYyQKy-HrubpkfuPGw8FTB8oQM3qw1W0vp4UBqQzEMDFOzc-4il/exec";
+
+        fetch(scriptUrl, { method: "POST", body: new FormData(event.target) })
+          .then((response) => {
+            if (typeof window !== "undefined") {
+              alert(
+                "Thanks your mail has been sent successfully we will give you response soon."
+              );
+              clear();
+            } else {
+              alert("Something went wrong try again.");
+            }
+          })
+          .catch((error) => {
+            console.error("Error!", error.message);
+            alert("something went wrong. Please try again");
+          });
+      }
+    </script>
+    <script>
+      // You can also use "$(window).load(function() {"
+      $(function () {
+        // Slideshow 3
+        $("#slider3").responsiveSlides({
+          auto: true,
+          pager: true,
+          nav: false,
+          speed: 500,
+          namespace: "callbacks",
+          before: function () {
+            $(".events").append("<li>before event fired.</li>");
+          },
+          after: function () {
+            $(".events").append("<li>after event fired.</li>");
+          },
+        });
+      });
+    </script>
+
+    <!-- start home -->
+    <section id="home" class="text-center">
+      <div class="templatemo_headerimage">
+        <div class="flexslider">
+          <ul class="slides">
+            <li>
+              <img src="https://d33wubrfki0l68.cloudfront.net/c43c7f442f1c789dd1996a4004b12d1d320cf910/1003d/images/slider/1.jpg" alt="Slide 1" />
+              <div class="slider-caption">
+                <div class="templatemo_homewrapper">
+                  <h1 class="wow fadeInDown" data-wow-delay="2000">
+                    Massage Spa
+                  </h1>
+                  <h2 class="wow fadeInDown" data-wow-delay="2000">
+                    <span>Wellness &AMP; Spa Salon</span>
+                  </h2>
+                </div>
+              </div>
+            </li>
+            <li>
+              <img src="https://d33wubrfki0l68.cloudfront.net/591dccb1ce2e855d003f6f20495045e86c5ad2bd/b1fd3/images/slider/2.jpg" alt="Slide 2" />
+              <div class="slider-caption">
+                <div class="templatemo_homewrapper">
+                  <h1 class="wow fadeInDown" data-wow-delay="2000">
+                    Massage Spa
+                  </h1>
+                  <h2 class="wow fadeInDown" data-wow-delay="2000">
+                    <span>Wellness &AMP; Spa Salon</span>
+                  </h2>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- end home -->
+
+    <div
+      style="
+        height: 150px;
+        width: 60px;
+        z-index: 5;
+        position: relative;
+        float: right;
+        position: fixed;
+        margin-top: -50px;
+      "
+    >
+      <a href="tel:+919834518242"
+        ><i id="m_font-awesome" class="fa fa-phone"></i><br
+      /></a>
+      <a href="https://wa.me/+919834518242"
+        ><i id="m_font-awesome" class="fa fa-whatsapp"></i
+      ></a>
+    </div>
+
+    <!---Start Pop Up Form--->
+
+    <div class="col-md-5 contact-grid" id="enquiry_form">
+      <div class="col-md-12 contact-grid form">
+        <h3 class="form_heading" style="">
+          Book Appointment
+          <span style="float: right; cursor: pointer"
+            ><i id="close" class="fa fa-times-circle"></i
+          ></span>
+        </h3>
+        <form
+          action="#"
+          onSubmit="sendEnquiryform();"
+          method="post"
+          id="enqForm"
+          name="send"
+        >
+          <input
+            type="text"
+            name="name"
+            class="txtBox"
+            placeholder="Name"
+            required=""
+            id="name"
+          />
+          <input
+            type="text"
+            class="ipt-agileits txtBox"
+            name="email"
+            placeholder="Email"
+            required=""
+            id="email"
+          />
+          <input
+            type="text"
+            name="phone"
+            placeholder="Telephone"
+            class="txtBox"
+            required=""
+            id="phone"
+          />
+          <textarea
+            name="message"
+            placeholder="Message"
+            required=""
+            class="txtBox"
+            style="height: 70px; resize: none"
+            id="message"
+          ></textarea>
+          <center>
+            <table width="53%">
+              <tr>
+                <th>
+                  <center>
+                    <input
+                      id="submit"
+                      class="btn sub"
+                      type="submit"
+                      value="Book Appointment"
+                    />
+                  </center>
+                </th>
+                <th>
+                  <center>
+                    <input
+                      id="reset"
+                      class="btn res"
+                      type="reset"
+                      value="Reset"
+                    />
+                  </center>
+                </th>
+              </tr>
+            </table>
+          </center>
+        </form>
+        <br />
+      </div>
+    </div>
+
+    <!---End Pop Up Form--->
+
+    <!-- start team -->
+    <div id="body_m">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h3
+              style="color: #93ca3a; text-align: center; padding: 20px"
+              class="wow bounce"
+            >
+              Welcome To
+            </h3>
+            <h3 class="wow bounce" style="text-align: center">
+              Naika Vaddo Spa Goa
+            </h3>
+            <p style="font-size: 18px; text-align: center" class="wow bounce">
+              If you are looking full body to body massage in Goa then please
+              contact us +91 9834518242
+            </p>
+          </div>
+          <div class="col-md-4 col-sm-4 wow fadeIn" data-wow-delay="0.3s">
+            <center>
+              <img
+                src="https://d33wubrfki0l68.cloudfront.net/255ce78a722c15f5dc3bf5816c9f407ae249273b/e3c48/images/services.jfif"
+                class="img-responsive"
+                alt="team img"
+              />
+            </center>
+            <h4 style="text-align: center">Full Body Aroma Spa</h4>
+            <p style="text-align: center">
+              A full-body massage usually includes your arms, legs, hands and
+              feet, your neck and back, your stomach and back. All extra
+              services on demand available.
+            </p>
+          </div>
+          <div class="col-md-4 col-sm-4 wow fadeIn" data-wow-delay="0.6s">
+            <center>
+              <img
+                src="https://d33wubrfki0l68.cloudfront.net/fdd32a46ec8719fd8a6f8ceaf22b14253c71f2f5/a590c/images/services5.jfif"
+                class="img-responsive"
+                alt="team img"
+              />
+            </center>
+            <h4 style="text-align: center">Deep Tissue Massage</h4>
+            <p style="text-align: center">
+              Deep tissue massage is a type of massage therapy that focuses on
+              realigning deeper layers of muscles and connective tissue.
+            </p>
+          </div>
+          <div class="col-md-4 col-sm-4 wow fadeIn" data-wow-delay="0.9s">
+            <center>
+              <img
+                src="https://d33wubrfki0l68.cloudfront.net/de6a4201819cd0665edc7a779e58158400ba00ba/2ff73/images/service3.jfif"
+                class="img-responsive"
+                alt="team img"
+              />
+            </center>
+            <h4 style="text-align: center">Hot Stone Massage</h4>
+            <p style="text-align: center">
+              Hot stone massage is best for people who have muscle pain and
+              tension or who simply want to relax. This type of therapeutic
+              massage is similar to a Swedish massage,
+            </p>
+          </div>
+          <div class="col-md-4 col-sm-4 wow fadeIn" data-wow-delay="0.3s">
+            <center>
+              <img
+                src="https://d33wubrfki0l68.cloudfront.net/9904c5491b75acbf583b7247a23dc00d57b819ac/bf905/images/services2.jfif"
+                class="img-responsive"
+                alt="team img"
+              />
+            </center>
+            <h4 style="text-align: center">Sports Massage</h4>
+            <p style="text-align: center">
+              Sports massage is a good option if you have a repetitive use
+              injury to a muscle, such as what you may get from playing a sport.
+              It’s also a good option if you’re prone to injuries because it can
+              be used to help prevent sports injuries.
+            </p>
+          </div>
+          <div class="col-md-4 col-sm-4 wow fadeIn" data-wow-delay="0.6s">
+            <center>
+              <img
+                src="https://d33wubrfki0l68.cloudfront.net/9a36322a12f2e48b9f783fc0a69345119ab716f2/eb18a/images/services4.jfif"
+                class="img-responsive"
+                alt="team img"
+              />
+            </center>
+            <h4 style="text-align: center">Trigger Point Massage</h4>
+            <p style="text-align: center">
+              Trigger point massages are best suited for people who have
+              injuries, chronic pain, or a specific issue or condition.
+              Sometimes areas of tightness in the muscle tissues, known as
+              trigger points.
+            </p>
+          </div>
+          <div class="col-md-4 col-sm-4 wow fadeIn" data-wow-delay="0.9s">
+            <center>
+              <img
+                src="https://d33wubrfki0l68.cloudfront.net/255ce78a722c15f5dc3bf5816c9f407ae249273b/e3c48/images/services.jfif"
+                class="img-responsive"
+                alt="team img"
+              />
+            </center>
+            <h4 style="text-align: center">Thai Massage</h4>
+            <p style="text-align: center">
+              Thai massage is best for people who want a more active form of
+              massage and want to reduce and relieve pain and stress.Thai
+              massage works the entire body using a sequence of movements that
+              are similar to yogic stretching.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end team -->
+
+    <!-- start divider -->
+    <div id="divider">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-1 col-sm-1"></div>
+          <div class="col-md-8 col-sm-8">
+            <h3 class="wow bounce">
+              JOIN US NOW AND GET <strong>20%</strong> OFF ON YOUR FIRST VISIT !
+            </h3>
+            <p class="wow fadeInUp" data-wow-delay="0.9s">
+              Naika Vaddo Spa Goa is knowed for its quality service at
+              affordable cost. We offer wide range of Services with
+              international Standards. If you are a first time vistor, you get
+              20℅ OFF as a welcome gift.
+            </p>
+          </div>
+          <div class="col-md-2 col-sm-2"></div>
+        </div>
+      </div>
+    </div>
+    <!-- end divider -->
+
+    <!-- start about -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <h3 class="about_us" style="text-align: center">ABOUT US</h3>
+          <div class="col-md-6 col-sm-6 wow fadeInLeft" data-wow-delay="0.9s">
+            <h4>Naika Vaddo Spa</h4>
+            <p>
+              At Naika Vaddo Spa Goa , Massage Spa in Umta Waddo. We Provide
+              Luxurious full body massage parlor in Goa to Our clients at very
+              reasonable Price so that it won’t hamper their pockets and
+              repeatedly they can visit and avail the Services. Female Staff is
+              well trained & provides good massage.<br />
+
+              It has been found in most of the countries like India, china,
+              Thailand, Russia and Arab are using multiple of types of massage
+              since very long, history tells every country massage has a history
+              with different techniques, so Naika Vaddo Spa was very popular
+              since very long. Naika Vaddo Spa Goa is mostly used for to reduce
+              muscle pain and decrease stress level. Different countries have a
+              different massage like Thai massage belongs to Thailand, Swedish
+              massage belongs to Sweden and aroma massage belong to china just
+              like this many countries has different spa therapies. Naika Vaddo
+              Spa is body to body touch from female to male or male to male. It
+              is given with oil massage in a slippery way. Body to body massage
+              reduces high-level tension and headache.
+            </p>
+          </div>
+          <div class="col-md-6 col-sm-6 wow fadeInRight" data-wow-delay="0.9s">
+            <img
+              src="https://d33wubrfki0l68.cloudfront.net/11986464777b7246181aa3d28017e97bd4af68d8/04ae2/images/about_img2.jpg"
+              class="img-responsive"
+              alt="team img"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end about -->
+
+    <!-- start team -->
+    <div id="gallery">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 style="color: #93ca3a; text-align: center" class="wow bounce">
+              Gallery
+            </h3>
+          </div>
+          <div class="col-md-4 col-sm-4 wow fadeIn" data-wow-delay="0.3s">
+            <img
+              src="https://d33wubrfki0l68.cloudfront.net/43a666e783df54b851195b5a31322d536fba5ceb/7a1b0/images/gallery7.jfif"
+              class="img-responsive"
+              alt="team img"
+            />
+          </div>
+          <div class="col-md-4 col-sm-4 wow fadeIn" data-wow-delay="0.6s">
+            <img
+              src="https://d33wubrfki0l68.cloudfront.net/94b744b6f7b848b9f92314aa16cc36df7dad485c/ba40d/images/gallery8.jfif"
+              class="img-responsive"
+              alt="team img"
+            />
+          </div>
+          <div class="col-md-4 col-sm-4 wow fadeIn" data-wow-delay="0.9s">
+            <img
+              src="https://d33wubrfki0l68.cloudfront.net/d9e7f1cfbd118139e1453d5d588ec75828b0a9f8/469df/images/gallery1.jpg"
+              class="img-responsive"
+              alt="team img"
+            />
+          </div>
+          <div class="col-md-4 col-sm-4 wow fadeIn" data-wow-delay="0.3s">
+            <img
+              src="https://d33wubrfki0l68.cloudfront.net/f1ed6d74c8a98ee00998bdfa0f55261a9f178fd2/144fe/images/gallery4.jpg"
+              class="img-responsive"
+              alt="team img"
+            />
+          </div>
+          <div class="col-md-4 col-sm-4 wow fadeIn" data-wow-delay="0.6s">
+            <img
+              src="https://d33wubrfki0l68.cloudfront.net/b541a5f6dffb3ee3996da1a45b83217e6e83a8e4/1bd2f/images/gallery3.jfif"
+              class="img-responsive"
+              alt="team img"
+            />
+          </div>
+          <div class="col-md-4 col-sm-4 wow fadeIn" data-wow-delay="0.9s">
+            <img
+              src="https://d33wubrfki0l68.cloudfront.net/f1ed6d74c8a98ee00998bdfa0f55261a9f178fd2/144fe/images/gallery4.jpg"
+              class="img-responsive"
+              alt="team img"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end team -->
+
+    <div id="map_form">
+      <h3 style="text-align: center; color: #93ca3a">Get In Touch</h3>
+      <!-- <div id="address">
+				<div id="newsletter">
+					<div class="container">
+						<form action="#" method="post" class=" " id="contact-form" role="form">
+							<h2>Book Appointment</h2>
+							<div class="col-md-6 col-sm-12 wow fadeIn" data-wow-delay="0.3s">
+								<input name="name" type="text" class="form-control" id="name" placeholder="Name">
+							</div>
+							<div class="col-md-6 col-sm-12 wow fadeIn" data-wow-delay="0.3s">
+								<input name="email" type="email" class="form-control" id="email" placeholder="Email">
+							</div>
+							<div class="col-md-6 col-sm-12 wow fadeIn" data-wow-delay="0.3s">
+								<input name="email" type="email" class="form-control" id="phone" placeholder="Phone">
+							</div>
+							<div class="col-md-12 col-sm-12 wow fadeIn" data-wow-delay="0.9s"><br>
+								<textarea name="message" rows="5" class="form-control" id="message" placeholder="Message"></textarea>
+							</div>
+							<div class="col-md-offset-9 col-md-3 col-sm-6 wow fadeIn" data-wow-delay="0.3s"><br>
+								<input name="submit" type="submit" class="form-control" id="submit" value="Send">
+							</div>
+					   </form>	
+					</div>
+			   </div>
+			</div> -->
+      <div id="map">
+        <div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7688.181874912119!2d73.763302!3d15.533255!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3d21c9d2dabc31c1!2sPeninsula%20Beach%20Resort!5e0!3m2!1sen!2sin!4v1635688784764!5m2!1sen!2sin"
+            style="border: 0; width: 100%; height: 100%"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- start contact -->
+    <div id="contact" style="margin: 60px 0px 5px 0px">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-4 wow fadeInLeft" data-wow-delay="0.6s">
+            <h3 class="footer_heading">
+              <strong style="color: #93ca3a">Naika Vaddo Spa</strong>
+            </h3>
+            <p>
+              Naika Vaddo Spa Goa is a name always on the mind of our customers
+              when they think of a soothing and satisfied moment they ever had.
+            </p>
+          </div>
+          <div class="col-md-3 col-sm-4 wow fadeInLeft" data-wow-delay="0.6s">
+            <h3 class="footer_heading">
+              <strong style="color: #93ca3a">Quick Link</strong>
+            </h3>
+            <ul style="list-style: none">
+              <li>
+                <a href='/' style='color: white; font-size: 18px'>HOME</a
+                >
+              </li>
+              <br />
+              <li>
+                <a href='/#about' style='color: white; font-size: 18px'>ABOUT US</a
+                >
+              </li>
+              <br />
+              <li>
+                <a href='/services' style='color: white; font-size: 18px'>BODY MASSAGE</a
+                >
+              </li>
+              <br />
+              <li>
+                <a href='/#gallery' style='color: white; font-size: 18px'>GALLERY</a
+                >
+              </li>
+              <br />
+              <li>
+                <a href='/contact' style='color: white; font-size: 18px'>CONTACT</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-4 wow fadeIn" data-wow-delay="0.9s">
+            <address>
+              <h3 class="footer_heading" style="color: #93ca3a">Contact Us</h3>
+              <p>
+                The therapies offered at Four Features Spa and full body massage
+                in Calangute McDonald’s, Umta Waddo, Goa
+              </p>
+              <p>
+                <i class="fa fa-map-marker too-icon"></i> Naila Vaddo,
+                Calangute, Goa-403516
+              </p>
+              <p><i class="fa fa-phone too-icon"></i>+919834518242</p>
+              <p>
+                <i class="fa fa-envelope-o too-icon"></i
+                >contactnaikavaddo@gmail.com
+              </p>
+            </address>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end contact -->
+
+    <!-- start footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-7">
+            <p>Copyright &copy; 2021 Naika Vaddo Spa</p>
+            <small
+              >Designed by
+              <a
+                rel="nofollow"
+                href="https://digitalrelier.com"
+                target="_parent"
+                >Digital Relier</a
+              ></small
+            >
+          </div>
+          <div class="col-md-4 col-sm-5">
+            <ul class="social-icon">
+              <li><a href="#" class="fa fa-facebook"></a></li>
+              <li><a href="#" class="fa fa-twitter"></a></li>
+              <li><a href="#" class="fa fa-instagram"></a></li>
+              <li><a href="#" class="fa fa-pinterest"></a></li>
+              <li><a href="#" class="fa fa-google"></a></li>
+              <li><a href="#" class="fa fa-github"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+
+    <!-- jQuery -->
+    <script src='https://d33wubrfki0l68.cloudfront.net/js/f808bfda80019880c47a322546d0aa4e6a194146/js/jquery.js'></script>
+    <!-- bootstrap -->
+    <script src='https://d33wubrfki0l68.cloudfront.net/js/c3bfb5fb7f1d7cf7757c9c3b57a0fb375c52b5e2/js/bootstrap.min.js'></script>
+    <!-- isotope -->
+    <script src='https://d33wubrfki0l68.cloudfront.net/js/f9e7795ca3dbc02ec01561bbfa36aa8d1a2b8a61/js/isotope.js'></script>
+    <!-- images loaded -->
+    <script src='https://d33wubrfki0l68.cloudfront.net/js/b3b6dd87db4e7264f62060b3aa0511d60f802c33/js/imagesloaded.min.js'></script>
+    <!-- wow -->
+    <script src='https://d33wubrfki0l68.cloudfront.net/js/2c62c708d162fcd7d9d9b957df5153e7ed2d833d/js/wow.min.js'></script>
+    <!-- smoothScroll -->
+    <script src='https://d33wubrfki0l68.cloudfront.net/js/3ccbc78cfaba4d1f1ee7b04a1131dd29bbb4c425/js/smoothscroll.js'></script>
+    <!-- jquery flexslider -->
+    <script src='https://d33wubrfki0l68.cloudfront.net/js/87d399d5e113cb8fcfde6e284a87319f9dcd4f32/js/jquery.flexslider.js'></script>
+    <!-- Magnific Pop up -->
+    <script src='https://d33wubrfki0l68.cloudfront.net/js/fc7275f61682fa1ea733c2987b43c46eda377256/js/jquery.magnific-popup.min.js'></script>
+    <!-- custom -->
+    <script src='https://d33wubrfki0l68.cloudfront.net/js/66a5b3e580eff4df4c82a26cc759fd8b6e32e7ed/js/custom.js'></script>
+  </body>
+</html>
